@@ -1,0 +1,95 @@
+public class LibraryActivity
+{
+    public String name;
+    public String author;
+    public String publishedYear;
+    public String publisher;
+    public int yearBorn;
+    public int yearOfDeath;
+    public int authorAge ;
+
+    public void setName(String name)
+    {
+        this.name = name;
+    }
+    public String getName()
+    {
+        return name;
+    }
+
+    public void setAuthor(String author)
+    {
+        this.author = author;
+    }
+    public String getAuthor()
+    {
+        return author;
+    }
+
+    public void setPublishedYear(String publishedYear)
+    {
+        this.publishedYear = publishedYear;
+    }
+    public String getPublishedYear()
+    {
+        return publishedYear;
+    }
+
+    public void setPublisher(String publisher)
+    {
+        this.publisher = publisher;
+    }
+    public String getPublisher()
+    {
+        return publisher;
+    }
+
+    public void setYearBorn(int yearBorn)
+    {
+        this.yearBorn = yearBorn;
+    }
+    public int getYearBorn()
+    {
+        return yearBorn;
+    }
+
+    public void setYearOfDeath(int yearOfDeath)
+    {
+        this.yearOfDeath = yearOfDeath;
+    }
+    public int getYearOfDeath()
+    {
+        return yearOfDeath;
+    }
+
+    public void setAuthorAge(int authorAge)
+    {
+        this.authorAge = authorAge;
+    }
+    public int getAuthorAge()
+    {
+        return yearOfDeath - yearBorn;
+    }
+
+    public void Author ()
+    {
+        System.out.println(getAuthor() + " " + getYearBorn() + " " + getYearOfDeath() + " " + getAuthorAge());
+    }
+
+
+}
+
+
+
+public class Main {
+    public static void main(String[] args)
+    {
+        LibraryActivity author = new LibraryActivity();
+        author.setAuthor("“J.R.R. Tolkien");
+        author.setYearBorn(1892);
+        author.setYearOfDeath(1973);
+
+        author.Author();
+    }
+
+}
